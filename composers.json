@@ -1,0 +1,242 @@
+{
+    "nodes": [
+        {
+            "name": "Tchaikovsky",
+            "group": 1,
+            "id": 0
+        },
+        {
+            "name": "Brahms",
+            "group": 1,
+            "id": 1
+        },
+        {
+            "name": "Beethoven",
+            "group": 1,
+            "id": 2
+        },
+        {
+            "name": "Rossini",
+            "group": 1,
+            "id": 3
+        },
+        {
+            "name": "Wagner",
+            "group": 1,
+            "id": 4
+        }, {
+            "name": "Prokofiev",
+            "group": 1,
+            "id": 5
+        }, {
+            "name": "Stravinsky",
+            "group": 1,
+            "id": 6
+        }, {
+            "name": "Rachmaninov",
+            "group": 1,
+            "id": 7
+        }, {
+            "name": "Berlioz",
+            "group": 1,
+            "id": 8
+        }, {
+            "name": "Handel",
+            "group": 1,
+            "id": 9
+        }, {
+            "name": "Clara Schumann",
+            "group": 1,
+            "id": 10
+        }, {
+            "name": "Liszt",
+            "group": 1,
+            "id": 11
+        }, {
+            "name": "Vaughn Williams",
+            "group": 1,
+            "id": 12
+        }, {
+            "name": "Mahler",
+            "group": 1,
+            "id": 13
+        }, {
+            "name": "Bizet",
+            "group": 1,
+            "id": 14
+        }, {
+            "name": "Schoenberg",
+            "group": 1,
+            "id": 15
+        }, {
+            "name": "Strauss",
+            "group": 1,
+            "id": 16
+        }, {
+            "name": "Fauré",
+            "group": 1,
+            "id": 17
+        }, {
+            "name": "Ravel",
+            "group": 1,
+            "id": 18
+        }, {
+            "name": "Saint-Saëns",
+            "group": 1,
+            "id": 19
+        }, {
+            "name": "Debussy",
+            "group": 1,
+            "id": 20
+        }, {
+            "name": "Mendelssohn",
+            "group": 1,
+            "id": 21
+        }, {
+            "name": "Borodin",
+            "group": 1,
+            "id": 22
+        }, {
+            "name": "Robert Schumann",
+            "group": 1,
+            "id": 23
+        }, {
+            "name": "Copland",
+            "group": 1,
+            "id": 24
+        }, {
+            "name": "Messiaen",
+            "group": 1,
+            "id": 25
+        }, {
+            "name": "Britten",
+            "group": 1,
+            "id": 26
+        }, {
+            "name": "Lalo",
+            "group": 1,
+            "id": 27
+        }, {
+            "name": "Ives",
+            "group": 1,
+            "id": 28
+        }
+	],
+    "links": [
+        {
+            "source": 0,
+            "target": 1,
+            "weight": 1,
+            "message": "Brahms is just some chaotic and utterly emtpy wasteland.",
+            "link": "http://www.raff.org/life/peers/tchaik.htm"
+        },
+        {
+            "source": 2,
+            "target": 3,
+            "weight": 1,
+            "message": "Opera seria is ill-suited to the italians. you do not know how to deal with real drama."
+        },
+        {
+            "source": 3,
+            "target": 4,
+            "weight": 1,
+            "message": "One can’t judge Wagner’s opera Lohengrin after a first hearing, and i certainly don’t intend hearing it a second time."
+        },
+        {
+            "source": 5,
+            "target": 6,
+            "weight": 1,
+            "message": "One can’t judge Wagner’s opera Lohengrin after a first hearing, and i certainly don’t intend hearing it a second time."
+        }, {
+            "source": 6,
+            "target": 7,
+            "weight": 1,
+            "message": "He was a six and a half foot scowl."
+        }, {
+            "source": 8,
+            "target": 9,
+            "weight": 1,
+            "message": "A great barrel of pork and beer."
+        }, {
+            "source": 10,
+            "target": 11,
+            "weight": 1,
+            "message": "That is just meaningless noise – not a single healthy idea anymore, everything confused, a clear harmonic progression is not to be found here any longer."
+        }, {
+            "source": 12,
+            "target": 13,
+            "weight": 1,
+            "message": "A very tolerable imitation of a composer."
+        }, {
+            "source": 14,
+            "target": 4,
+            "weight": 1,
+            "message": "He is endowed with such insolent conceit that criticism cannot touch his heart – admitting that he has a heart, which I doubt."
+        }, {
+            "source": 15,
+            "target": 16,
+            "weight": 1,
+            "message": "The expressions he uses are as banal as a cheap song."
+        }, {
+            "source": 17,
+            "target": 18,
+            "weight": 1,
+            "message": "on Ravel’s String Quartet in F Major: Truncated, ill-balanced, and, in a nutshell, a failure."
+        }, {
+            "source": 19,
+            "target": 20,
+            "weight": 1,
+            "message": "He cultivated an absence of style, logic, and common sense."
+        }, {
+            "source": 21,
+            "target": 8,
+            "weight": 1,
+            "message": "Indifferent drivel, mere grunting, shouting and screaming back and forth."
+        }, {
+            "source": 0,
+            "target": 22,
+            "weight": 1,
+            "message": "He can’t compose a single line without somebody’s help."
+        }, {
+            "source": 1,
+            "target": 11,
+            "weight": 1,
+            "message": "The compositions are getting more and more terrible... my fingers often itch to pick an argument, and to write anti-Liszt. "
+        }, {
+            "source": 23,
+            "target": 4,
+            "weight": 1,
+            "message": "He cannot write or think out four consecutive bars of beautiful, or even good music."
+        }, {
+            "source": 24,
+            "target": 12,
+            "weight": 1,
+            "message": "Listening to the fifth symphony of ralph vaughan williams is like starring at a cow for 45 minutes."
+        }, {
+            "source": 6,
+            "target": 25,
+            "weight": 1,
+            "message": "All you need to write like him is a large bottle of ink."
+        }, {
+            "source": 26,
+            "target": 20,
+            "weight": 1,
+            "message": "on Debussy’s La Mer: The audience expected the Ocean. Something big, something colossal, but they were served instead with some agitated water in a saucer. "
+        }, {
+            "source": 26,
+            "target": 6,
+            "weight": 1,
+            "message": "Stravinsky’s The Rake’s Progress: I liked the Opera very much. Everything but the music. "
+        }, {
+            "source": 27,
+            "target": 1,
+            "weight": 1,
+            "message": "Here is a man who looks right and left for what he cannot find within himself."
+        }, {
+            "source": 28,
+            "target": 20,
+            "weight": 1,
+            "message": "He should be selling newspapers."
+        }
+	]
+}

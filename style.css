@@ -1,0 +1,43 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    box-shadow: 0px 0px 0px 12px black inset;
+    padding: 0 12px;
+    display: flex;
+}
+
+.textbox {
+    min-width: 20%;
+    overflow: hidden;
+    padding: 1em 1.8em;
+}
+
+.textbox h1 {
+    font-family: 'Garamond Premier', 'Cormorant', serif;
+    font-weight: 100;
+    font-size: 2.8em;
+}
+
+.textbox p {
+    font-family: sans-serif;
+}
+
+.link {
+    stroke: #aaa;
+}
+
+.node text {
+    cursor: pointer;
+    font-family: sans-serif;
+    font-weight: 100;
+    display: block;
+    text-align: center;
+}
+
+
+image {
+    height: 60px;
+}
