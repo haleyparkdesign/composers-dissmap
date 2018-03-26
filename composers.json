@@ -120,6 +120,14 @@
             "name": "Ives",
             "group": 1,
             "id": 28
+        }, {
+            "name": "Chopin",
+            "group": 1,
+            "id": 29
+        }, {
+            "name": "Mussorgsky",
+            "group": 1,
+            "id": 30
         }
 	],
     "links": [
@@ -143,10 +151,16 @@
             "message": "One can’t judge Wagner’s opera Lohengrin after a first hearing, and i certainly don’t intend hearing it a second time."
         },
         {
+            "source": 3,
+            "target": 4,
+            "weight": 1,
+            "message": "Wagner has beautiful moments but awful quarters of an hour."
+        },
+        {
             "source": 5,
             "target": 6,
             "weight": 1,
-            "message": "One can’t judge Wagner’s opera Lohengrin after a first hearing, and i certainly don’t intend hearing it a second time."
+            "message": "Bach on the wrong notes."
         }, {
             "source": 6,
             "target": 7,
@@ -161,7 +175,7 @@
             "source": 10,
             "target": 11,
             "weight": 1,
-            "message": "That is just meaningless noise – not a single healthy idea anymore, everything confused, a clear harmonic progression is not to be found here any longer."
+            "message": "He gives me the impression of being a spoiled child."
         }, {
             "source": 12,
             "target": 13,
@@ -211,7 +225,7 @@
             "source": 24,
             "target": 12,
             "weight": 1,
-            "message": "Listening to the fifth symphony of ralph vaughan williams is like starring at a cow for 45 minutes."
+            "message": "Listening to the fifth symphony of Ralph Vaughan Williams is like staring at a cow for 45 minutes."
         }, {
             "source": 6,
             "target": 25,
@@ -237,6 +251,46 @@
             "target": 20,
             "weight": 1,
             "message": "He should be selling newspapers."
+        }, {
+            "source": 0,
+            "target": 1,
+            "weight": 1,
+            "message": "What a giftless bastard!"
+        }, {
+            "source": 2,
+            "target": 3,
+            "weight": 1,
+            "message": "Rossini would have been a great composer if his teacher had spanked him enough on the backside."
+        }, {
+            "source": 4,
+            "target": 29,
+            "weight": 1,
+            "message": "A composer for one right hand."
+        }, {
+            "source": 0,
+            "target": 9,
+            "weight": 1,
+            "message": "Handel is only fourth rate. He's not even interesting."
+        }, {
+            "source": 0,
+            "target": 30,
+            "weight": 1,
+            "message": "He likes what is coarse, unpolished, and ugly."
+        }, {
+            "source": 3,
+            "target": 8,
+            "weight": 1,
+            "message": "On Symphonie Fantastique: What a good thing that isn't music."
+        }, {
+            "source": 19,
+            "target": 18,
+            "weight": 1,
+            "message": "If he'd been making shell cases during the war it might have been better for the music."
+        }, {
+            "source": 0,
+            "target": 30,
+            "weight": 1,
+            "message": "On Mussorgsky's Boris Godunov: It is the most insipid and base parody on music."
         }
 	]
 }
