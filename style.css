@@ -7,22 +7,27 @@ body {
     box-shadow: 0px 0px 0px 12px black inset;
     padding: 0 12px;
     display: flex;
+    overflow: hidden;
 }
 
 .textbox {
     min-width: 20%;
     overflow: hidden;
-    padding: 1em 1.8em;
+    padding: 1em 2.4em;
+    padding-right: 0;
 }
 
 .textbox h1 {
-    font-family: 'Garamond Premier', 'Cormorant', serif;
+    font-family: 'Cormorant Garamond', serif;
     font-weight: 100;
-    font-size: 2.8em;
+    font-size: 3.3em;
 }
 
 .textbox p {
     font-family: sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    line-height: 1.4em;
 }
 
 .link {
@@ -31,12 +36,9 @@ body {
 
 .node text {
     cursor: pointer;
-    font-family: sans-serif;
-    font-weight: 100;
-    display: block;
-    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
 }
-
 
 image {
     height: 60px;

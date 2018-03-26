@@ -43,7 +43,7 @@ d3.json("composers.json", function (json) {
 
     node.append("text")
         .attr("dx", -30)
-        .attr("dy", "3.1em")
+        .attr("dy", "3em")
         .text(function (d) {
             return d.name
         });
