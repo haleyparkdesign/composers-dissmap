@@ -36,8 +36,10 @@ d3.json("composers.json", function (json) {
 
     node.append("image")
         .attr("href", function (d) {
-            return 'img/' + d.name + '.png';
+            return './img/' + d.name + '.png';
         })
+        .attr('height', '60')
+        .attr('width', '60')
         .attr('x', '-30px')
         .attr('y', '-30px');
 
