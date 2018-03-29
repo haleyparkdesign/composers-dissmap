@@ -17,7 +17,7 @@ d3.csv("data.csv", function (error, links) {
     });
 
     var width = window.innerWidth * 0.8,
-        height = window.innerHeight,
+        height = window.innerHeight - 12,
         radius = 30;
 
     var force = d3.layout.force()
@@ -25,7 +25,7 @@ d3.csv("data.csv", function (error, links) {
         .links(links)
         .size([width, height])
         .linkDistance(100)
-        .charge(-700)
+        .charge(-600)
         .on("tick", tick)
         .start();
 
@@ -83,13 +83,12 @@ d3.csv("data.csv", function (error, links) {
 
     // add the text
     node.append("text")
-        .attr("x", 12)
+        .attr("x", 36)
         .attr("dy", ".35em")
         .text(function (d) {
             return d.name;
         });
 
-    // add the curvy lines
     function tick() {
         path.attr("d", function (d) {
             var dx = d.target.x - d.source.x,
@@ -129,5 +128,4 @@ d3.csv("data.csv", function (error, links) {
             fill: "black",
         });
     }
-
 });
