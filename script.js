@@ -13,7 +13,7 @@ d3.csv("data.csv", function (error, links) {
             (nodes[link.target] = {
                 name: link.target
             });
-        link.value = +link.value;
+        link.value = link.value;
     });
 
     var width = window.innerWidth * 0.8,
@@ -56,16 +56,24 @@ d3.csv("data.csv", function (error, links) {
             return "link " + d.type;
         })
         .attr("marker-end", "url(#end)")
-        .on("mouseover", handleMouseOver)
-        .on("mouseout", handleMouseOut);
+        .on("mouseover", function (d) {
+            tooltip.html(d.value);
+            return tooltip.style("visibility", "visible");
+        })
+        .on("mousemove", function () {
+            return tooltip
+                .attr("x", d3.event.clientX - 220 + "px")
+                .attr("y", d3.event.clientY - 70 + "px");
+        })
+        .on("mouseout", function () {
+            return tooltip.style("visibility", "hidden");
+        });
 
     // define the nodes
     var node = svg.selectAll(".node")
         .data(force.nodes())
         .enter().append("g")
         .attr("class", "node")
-        .on("click", click)
-        .on("dblclick", dblclick)
         .call(force.drag);
 
     // add the nodes
@@ -108,24 +116,12 @@ d3.csv("data.csv", function (error, links) {
             });
     }
 
-    function click() {}
+    var tooltip = svg.append("foreignObject")
+        .attr("class", "tooltip-svg")
 
-    function dblclick() {}
 
-    // Create Event Handlers for mouse
-    function handleMouseOver(d, i) { // Add interactivity
-
-        // Use D3 to select element, change color and size
-        d3.select(this).attr({
-            fill: "orange",
-            r: radius * 2
-        });
-    }
-
-    function handleMouseOut(d, i) {
-        // Use D3 to select element, change color back to normal
-        d3.select(this).attr({
-            fill: "black",
-        });
-    }
+    tooltip
+        .append("div")
+        .attr("class", "tooltip")
+        .text("");
 });

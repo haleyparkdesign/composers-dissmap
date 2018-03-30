@@ -1,6 +1,6 @@
 # composers-dissmap
-Network map of classical composers dissing each other. A work in progress.
+A network map of classical composers hating on each other. Work in progress.
 
 URL: http://haleypark.design/composers-dissmap/
 
-Modified from http://bl.ocks.org/d3noob/8043434
+Learned and modified from: http://bl.ocks.org/d3noob/8043434

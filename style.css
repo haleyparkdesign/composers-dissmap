@@ -8,6 +8,7 @@ body {
     padding: 0 12px;
     display: flex;
     overflow: hidden;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .textbox {
@@ -24,8 +25,6 @@ body {
 }
 
 .textbox p {
-    font-family: sans-serif;
-    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
     line-height: 1.4em;
 }
@@ -34,32 +33,10 @@ body {
     stroke: #aaa;
 }
 
-.node text {
-    cursor: pointer;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 300;
-}
-
 path.link {
     fill: none;
     stroke: #666;
     stroke-width: 1.5px;
-}
-
-path.link.twofive {
-    opacity: 0.25;
-}
-
-path.link.fivezero {
-    opacity: 0.50;
-}
-
-path.link.sevenfive {
-    opacity: 0.75;
-}
-
-path.link.onezerozero {
-    opacity: 1.0;
 }
 
 circle {
@@ -70,4 +47,22 @@ circle {
 
 .description {
     opacity: 0.5;
+}
+
+.tooltip-svg {
+    color: #fff;
+    padding: 0.8em;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 200px;
+    width: 180px;
+    visibility: hidden;
+}
+
+.tooltip {
+    position: absolute;
+    border-radius: 6px;
+    text-align: center;
+    z-index: 9999;
+    padding: 1em;
+    line-height: 1.5em;
 }
