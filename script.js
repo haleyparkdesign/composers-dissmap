@@ -62,8 +62,8 @@ d3.csv("data.csv", function (error, links) {
         })
         .on("mousemove", function () {
             return tooltip
-                .attr("x", d3.event.clientX - 220 + "px")
-                .attr("y", d3.event.clientY - 70 + "px");
+                .attr("x", d3.event.clientX - 322 + "px")
+                .attr("y", d3.event.clientY + "px");
         })
         .on("mouseout", function () {
             return tooltip.style("visibility", "hidden");

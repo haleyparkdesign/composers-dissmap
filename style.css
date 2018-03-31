@@ -47,12 +47,8 @@ circle {
 }
 
 .tooltip-svg {
-
-    background-color: rgba(0, 0, 0, 0.7);
     visibility: hidden;
 }
-
-/*for firefox*/
 
 .tooltip-inner {
     color: #fff;
