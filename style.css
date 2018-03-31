@@ -36,20 +36,6 @@ path.link {
     cursor: pointer;
 }
 
-circle {
-    fill: #ccc;
-    stroke: #fff;
-    stroke-width: 1.5px;
-}
-
-.description {
-    opacity: 0.5;
-}
-
-.tooltip-svg {
-    visibility: hidden;
-}
-
 .tooltip-inner {
     color: #fff;
     padding: 0.8em;

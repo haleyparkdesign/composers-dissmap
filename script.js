@@ -52,9 +52,7 @@ d3.csv("data.csv", function (error, links) {
     var path = svg.append("svg:g").selectAll("path")
         .data(force.links())
         .enter().append("svg:path")
-        .attr("class", function (d) {
-            return "link " + d.type;
-        })
+        .attr("class", "link")
         .attr("marker-end", "url(#end)")
         .on("mouseover", function (d) {
             tooltip.html("<div class='tooltip-inner'>" + d.value + "</div>");
@@ -62,11 +60,14 @@ d3.csv("data.csv", function (error, links) {
         })
         .on("mousemove", function () {
             return tooltip
+                .style("visibility", "visible")
                 .attr("x", d3.event.clientX - 322 + "px")
                 .attr("y", d3.event.clientY + "px");
         })
         .on("mouseout", function () {
-            return tooltip.style("visibility", "hidden");
+            setTimeout(function () {
+                return tooltip.style("visibility", "hidden");
+            }, 2500);
         });
 
     // define the nodes
@@ -120,4 +121,5 @@ d3.csv("data.csv", function (error, links) {
         .attr("class", "tooltip-svg")
         .attr("width", "180px")
         .attr("height", "200px")
+        .attr("visibility", "hidden")
 });
