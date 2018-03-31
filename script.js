@@ -39,12 +39,12 @@ d3.csv("data.csv", function (error, links) {
         .enter().append("svg:marker") // This section adds in the arrows
         .attr("id", String)
         .attr("viewBox", "0 -5 10 10")
-        .attr("refX", 43.3)
+        .attr("refX", 36)
         .attr("refY", 0)
         .attr("markerWidth", 6)
         .attr("markerHeight", 6)
         .attr("orient", "auto")
-        .attr("fill", "#666")
+        .attr("fill", "#b4b4b4")
         .append("svg:path")
         .attr("d", "M0,-5L10,0L0,5");
 
@@ -57,7 +57,7 @@ d3.csv("data.csv", function (error, links) {
         })
         .attr("marker-end", "url(#end)")
         .on("mouseover", function (d) {
-            tooltip.html(d.value);
+            tooltip.html("<div class='tooltip-inner'>" + d.value + "</div>");
             return tooltip.style("visibility", "visible");
         })
         .on("mousemove", function () {
@@ -118,10 +118,6 @@ d3.csv("data.csv", function (error, links) {
 
     var tooltip = svg.append("foreignObject")
         .attr("class", "tooltip-svg")
-
-
-    tooltip
-        .append("div")
-        .attr("class", "tooltip")
-        .text("");
+        .attr("width", "180px")
+        .attr("height", "200px")
 });
