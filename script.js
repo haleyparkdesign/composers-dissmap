@@ -20,6 +20,10 @@ d3.csv("data.csv", function (error, links) {
         height = window.innerHeight - 12,
         radius = 30;
 
+    if (window.innerWidth < 720) {
+        width = window.innerWidth - 12
+    };
+
     var force = d3.layout.force()
         .nodes(d3.values(nodes))
         .links(links)
@@ -29,7 +33,7 @@ d3.csv("data.csv", function (error, links) {
         .on("tick", tick)
         .start();
 
-    var svg = d3.select("body").append("svg")
+    var svg = d3.select("#canvas").append("svg")
         .attr("width", width)
         .attr("height", height);
 
@@ -61,8 +65,8 @@ d3.csv("data.csv", function (error, links) {
         .on("mousemove", function () {
             return tooltip
                 .style("visibility", "visible")
-                .attr("x", d3.event.clientX - 322 + "px")
-                .attr("y", d3.event.clientY + "px");
+                .attr("x", d3.event.pageX - 322 + "px")
+                .attr("y", d3.event.pageY + 10 + "px");
         })
         .on("mouseout", function () {
             setTimeout(function () {

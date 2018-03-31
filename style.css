@@ -30,6 +30,27 @@ body {
     line-height: 1.4em;
 }
 
+#canvas {
+    width: 100%;
+}
+
+@media (max-width: 720px) {
+    body {
+        overflow-y: scroll;
+        display: block;
+        padding: 12px;
+        height: auto;
+    }
+    .textbox {
+        width: calc(100% - 32px);
+        padding: 1em;
+    }
+
+    .textbox h1 {
+        text-align: center;
+    }
+}
+
 path.link {
     stroke: #b4b4b4;
     stroke-width: 1.9px;
