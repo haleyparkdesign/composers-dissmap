@@ -115,8 +115,7 @@ d3.csv("data.csv", function (error, links) {
                 d.target.y;
         });
 
-        node
-            .attr("transform", function (d) {
+        node.attr("transform", function (d) {
                 return "translate(" + d.x + "," + d.y + ")";
             });
     }
