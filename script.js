@@ -65,7 +65,7 @@ d3.csv("data.csv", function (error, links) {
         .on("mousemove", function () {
             return tooltip
                 .style("visibility", "visible")
-                .attr("x", d3.event.pageX - 322 + "px")
+                .attr("x", d3.event.pageX + 10 + "px")
                 .attr("y", d3.event.pageY + 10 + "px");
         })
         .on("mouseout", function () {
